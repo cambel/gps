@@ -1,0 +1,38 @@
+# Format for variables [min_value, max_value, default_value]
+common:
+  experiment: box2d_pointmass
+  gui: false
+  num_tests: 10 # Num of test per variable
+  conditions: 4
+  steps: 100
+  samples: 5 #[2, 10, 5]
+  iterations: 10
+  noise_var: 3.0 #[1.0, 3.0, 2.0]
+  init_var: 2.0 #[2, 6, 4] 
+  init_gains: 10 #[0.01, 100, 0.01]
+  action_cost: 0.005 #[0.000001, 0.0001, 0.00001] 
+  cost:
+    l1: 1.0 #[0.1, 10.0, 1.0]
+    l2: .001 #[1.0, 10.0, 1.0]
+    alpha: 0.00005
+    final_w: 10.0 #[1.0, 10.0, 10.0]
+  cost_ft:
+    w: [0.0, 0.0, 0.0, 0.0, 0., 0.0]
+    target: [0.,0.,15.,0.,0.,0.]
+  cost_dist:
+    w: [1., 1., 1., 0]
+    target: [0., 0., 0., 0]
+  mdgps:
+    kl_step: 1.0 #[0.01, 3.0, 0.5]
+    min_step_mult: 0.1 #[0.01, 1.0, 0.1]
+    max_step_mult: 3.0 #[.1, 5.0, 1.0]
+  traj_opt:
+    covariance_damping: 3.0 #[1.0, 10.0, 2.0]
+    kl_threshold: 0.1 #[0.2, 2.0, 0.5]
+    min_temperature: [0.001, 0.1, 0.001]
+  dynamics:
+    regularization: 0.000001 #[0.0000001, 0.001, 0.000001]
+    max_clusters: 20 #[10, 50, 20]
+    max_samples: 20 #[5, 50, 20]
+  policy:
+    iterations: 500 #[1000, 5000, 3000]

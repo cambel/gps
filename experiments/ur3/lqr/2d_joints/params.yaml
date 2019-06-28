@@ -1,0 +1,29 @@
+action_cost: 0.01
+conditions: 4
+cost:
+  alpha: 5.0e-05
+  final_w: 10.0
+  l1: 1.0
+  l2: 0.01
+dynamics:
+  max_clusters: 15
+  max_samples: 20
+  regularization: 1.0e-07
+exp_global_name: ur_lqr_exp_06-27-19_11-48
+exp_name: default
+experiment: 2d_joints
+frecuency: 20
+gui: false
+init:
+  final_weight: 50
+  gains: 10
+  stiffness: 1.0
+  stiffness_vel: 0.5
+  var: 10
+iterations: 15
+noise_var: 4.0
+num_tests: 5
+samples: 3
+save-plot: true
+slowness: 0.5
+steps: 100

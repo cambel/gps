@@ -1,0 +1,29 @@
+action_cost: 2.5e-05
+conditions: 1
+dist_cost1:
+  alpha: 5.0e-05
+  final_weight: 10
+  l1: 1.0
+  l2: 0.1
+dynamics:
+  max_clusters: 15
+  max_samples: 20
+  regularization: 1.0e-07
+exp_global_name: mean_error_06-28-19_16-13
+exp_name: default
+experiment: 6d_joints
+frecuency: 20
+gui: false
+init:
+  final_weight: 50
+  gains: 10
+  stiffness: 1.0
+  stiffness_vel: 1.0
+  var: 5.0
+iterations: 20
+noise_var: 1.0
+num_tests: 10
+samples: 3
+save-plot: true
+slowness: 0.5
+steps: 100

@@ -1,0 +1,74 @@
+action_cost: 0.005
+conditions: 4
+cost:
+  alpha: 5.0e-05
+  final_w: 10.0
+  l1: 1.0
+  l2: 0.001
+cost_dist:
+  target:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0
+  w:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0
+cost_ft:
+  target:
+  - 0.0
+  - 0.0
+  - 15.0
+  - 0.0
+  - 0.0
+  - 0.0
+  w:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+dynamics:
+  max_clusters: 20
+  max_samples: 20
+  regularization: 1.0e-06
+exp_global_name: ur_lqr_exp_05-29-19_18-57
+exp_name: traj_opt~min_temperature:0.1
+experiment: box2d_pointmass
+gui: false
+init_gains: 10
+init_var: 2.0
+iterations: 10
+mdgps:
+  kl_step: 1.0
+  max_step_mult: 3.0
+  min_step_mult: 0.1
+noise_var: 3.0
+num_tests: 10
+policy:
+  iterations: 500
+samples: 5
+steps: 100
+traj_opt:
+  covariance_damping: 3.0
+  kl_threshold: 0.1
+  min_temperature: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - 0
+    - 1
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    mpmZmZmZuT8=

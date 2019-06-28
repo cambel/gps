@@ -25,6 +25,9 @@ enum SampleType {
   END_EFFECTOR_POINT_VELOCITIES_NO_TARGET = 18;
   NOISE = 19;
   TOTAL_DATA_TYPES = 20;
+  GRIPPING = 21;
+  TORQUE = 22;
+  TORQUE_JACOBIAN = 23;
 }
 
 // Message containing the data for a single sample.

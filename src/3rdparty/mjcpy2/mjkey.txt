@@ -1,0 +1,20 @@
+MuJoCo Pro Personal license activation key, number 25877, type 6.
+
+Issued to CRISTIAN BELTRAN <u270537f@ecs.osaka-u.ac.jp>.
+
+Expires July 4, 2018.
+
+This file activates MuJoCo Pro on a single computer with id:
+LINUX_NIK7SGON2UV40SS37040G_50026B77T304824A374
+
+Do not modify this file. Its entire content, including the
+plain text section, is used by the activation manager.
+
+19872e3e55cf03df0fa79ceadefbb812da9e22bb35255d4f1a22e4ee85e22984
+68ade37d75c4eee274695f7a47f333cdf9bfb9ace223572d4f3858e7ecec834f
+b704d8f19943870a436ae03d4d2ea8ce42d7b22e03761c3d5f60e326db5a49b7
+cf2810a878a6362c9e9304f156ae1bc21454d9cdefe2b91c669f82bb715520e1
+70b55c4538056679da7322fbbdccd9ec6233d7ecda004839a9b88a1ca0ad3d30
+6ded5c8fe0349c64e594b91fe9ffe900d5ccff6718927bc1baa5338958b47495
+a4dc90719d599c5488320190408b0dd8b59dad41bef293101110b9e8f64a0a25
+95014179a011de5aed3ed641d60475560384ae32969ab90e0c4f0f1063069f95

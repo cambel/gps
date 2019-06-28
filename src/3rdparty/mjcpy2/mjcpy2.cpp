@@ -86,7 +86,7 @@ private:
 };
 
 PyMJCWorld2::PyMJCWorld2(const std::string& loadfile) {
-    mj_activate("src/3rdparty/mjpro/mjkey.txt");
+    mj_activate("~/gps/src/3rdparty/mjpro/mjkey.txt");
   	if (endswith(loadfile, "xml")) {
         NewModelFromXML(loadfile.c_str(), m_model);
   	}
@@ -116,12 +116,12 @@ int StateSize(mjModel* m) {
 }
 void GetState(mjtNum* ptr, const mjModel* m, const mjData* d) {
     mju_copy(ptr, d->qpos, m->nq);
-    ptr += m->nq;
+    ptr += m->nq; //shift array positions
     mju_copy(ptr, d->qvel, m->nv);
 }
 void SetState(const mjtNum* ptr, const mjModel* m, mjData* d) {
     mju_copy(d->qpos, ptr, m->nq);
-    ptr += m->nq;
+    ptr += m->nq; //shift array positions
     mju_copy(d->qvel, ptr, m->nv);
 }
 inline void SetCtrl(const mjtNum* ptr, const mjModel* m, mjData* d) {

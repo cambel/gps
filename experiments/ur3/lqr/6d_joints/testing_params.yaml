@@ -1,0 +1,29 @@
+# Format for variables [min_value, max_value, default_value]
+common:
+  experiment: 6d_joints
+  gui: false
+  save-plot: true
+  conditions: 1
+  num_tests: 10 # Num of test per variable
+  steps: 100 #[50, 500, 100]
+  samples: 3 #[2, 6, 5]
+  frecuency: 20 #[40, 80, 40] ya
+  slowness: 0.5 #[5, 100, 5]
+  iterations: 20
+  noise_var: 1.0 #[1.0, 10.0, 2.0]
+  init:
+    gains: 10 #[0.01, 100, 0.01]
+    var: 5.0 #[1.0, 10, 10]
+    stiffness: 1.0 #[0.05, 1.0, 1.0]
+    stiffness_vel: 1.0 #[0.05, 1.0, 0.5]
+    final_weight: 50 #[1, 100, 100]
+  action_cost: 2.5e-05 #[0.000001, 0.0001, 0.00001] 
+  dist_cost1:
+    l1: 1.0 #[0.01, 5, 0.1]
+    l2: 0.1 #[5.0, 0.01, 0.01]
+    alpha: 0.00005
+    final_weight: 10 #[2, 10, 10]
+  dynamics:
+    regularization: 0.0000001 #[0.0000001, 0.00001, 0.000001]
+    max_clusters: 15 #[10, 50, 20]
+    max_samples: 20 #[5, 50, 20]    
